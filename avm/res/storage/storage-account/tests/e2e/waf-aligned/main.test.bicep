@@ -67,7 +67,7 @@ module testDeployment '../../../main.bicep' = [
     params: {
       location: resourceLocation
       name: '${namePrefix}${serviceShort}001'
-      skuName: 'Standard_GRS'
+      skuName: 'Standard_ZRS'
       allowBlobPublicAccess: false
       requireInfrastructureEncryption: true
       largeFileSharesState: 'Enabled'
