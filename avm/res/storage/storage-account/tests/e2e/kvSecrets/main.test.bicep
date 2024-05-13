@@ -46,7 +46,7 @@ module testDeployment '../../../main.bicep' = {
   name: '${uniqueString(deployment().name, resourceLocation)}-test-${serviceShort}'
   params: {
     location: resourceLocation
-    name: '${namePrefix}-kv-ref'
+    name: '${namePrefix}kvref'
     secretsKeyVault: {
       keyVaultName: nestedDependencies.outputs.keyVaultName
       primaryConnectionStringSecretName: 'custom-secret-name'
