@@ -27,7 +27,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
   location: location
   kind: 'StorageV2'
   sku: {
-    name: 'Standard_LRS'
+    name: 'Standard_ZRS'
   }
   properties: {
     allowBlobPublicAccess: false
