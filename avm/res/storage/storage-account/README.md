@@ -242,7 +242,7 @@ module storageAccount 'br/public:avm/res/storage/storage-account:<version>' = {
   name: 'storageAccountDeployment'
   params: {
     // Required parameters
-    name: 'kv-ref'
+    name: 'kvref'
     // Non-required parameters
     location: '<location>'
     secretsKeyVault: {
@@ -267,7 +267,7 @@ module storageAccount 'br/public:avm/res/storage/storage-account:<version>' = {
   "parameters": {
     // Required parameters
     "name": {
-      "value": "kv-ref"
+      "value": "kvref"
     },
     // Non-required parameters
     "location": {
@@ -2277,8 +2277,8 @@ Restrict copy to and from Storage Accounts within an AAD tenant or with Private 
   ```Bicep
   [
     ''
-    'AAD'
     'PrivateLink'
+    'AAD'
   ]
   ```
 
